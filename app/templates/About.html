@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <a href="#">
+                    Главная
+                </a>
+                <a href="#">
+                    Магазин
+                </a>
+                <a href="{% url 'favorite' %}">
+                    Избраные 
+                </a>
+                <a href="{% url 'cards' %}">
+                    Корзина
+                </a>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <form action="">
+            <input type="text" placholder="Nmame...">
+            <input type="email" placholder="Email...">
+            <div class="passw">
+                <input id="pass" type="password" placholder="Placholder...">
+                
+
+            </div>
+
+
+
+    </div>
+<div class="card text-bg-dark">
+    <img src="https://i.pinimg.com/originals/94/37/62/9437625b155263382fb9fdbec03c03de.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h5 class="card-title">New Balance</h5>
+      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, quod ipsum. Optio totam possimus ipsa amet id, facere, iusto voluptatum sit cum reiciendis dolore quam fuga expedita quia laborum quaerat.</p>
+      <p class="card-text"><small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, ipsum.
+      </small></p>
+    </div>
+</div>
+</body>
+</html>
