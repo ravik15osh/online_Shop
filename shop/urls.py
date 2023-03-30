@@ -27,6 +27,7 @@ urlpatterns = [
     path('favorite',favorites_page,name = 'favorite'),
     path('cards/',cards,name = 'cards'),
     path('addcart/<int:id>',addcart,name = 'addcart'),
+    path('aith/', auth, name='auth'),
 
 ]
 

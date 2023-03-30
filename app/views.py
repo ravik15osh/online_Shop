@@ -46,3 +46,6 @@ def addcart(req, id):
     context = {'nike':nike}
     print(st)
     return render(req,'index.html',context)
+
+def auth(req):
+    return render(req, 'About.html')
