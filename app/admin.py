@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Nike,Images
+from .models import Category, Nike,Images,OrderItem, Order
 
 
 # Register your models here.
@@ -14,3 +14,6 @@ class NikeAdmin(admin.ModelAdmin):
     list_display = ('title','price')
 
 admin.site.register(Category)
+admin.site.register(OrderItem)
+admin.site.register(Order)
+

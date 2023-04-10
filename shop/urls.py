@@ -18,16 +18,31 @@ from django.urls import path
 from app.views import *
 from shop.settings import MEDIA_ROOT,MEDIA_URL
 from django.conf.urls.static import static
+from app.views import *
+from user.views import *
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', str1 , name='str1'),
     path('detail/<int:id>',detail,name = 'detail'),
     path('favorites/<int:id>',favorites,name = 'favorites'),
-    path('favorite',favorites_page,name = 'favorite'),
+    path('favorite/',favorites_page,name = 'favorite'),
+    
+    path('remove_from_cartpage/', remove_from_cartpage,name='remove_from_cartpage'),
+    
     path('cards/',cards,name = 'cards'),
-    path('addcart/<int:id>',addcart,name = 'addcart'),
-    path('aith/', auth, name='auth'),
+    path('addcart/<int:id>',cart,name = 'addcart'),
+    path('delete/<int:id>', delete, name='delete'),
+    
+    path('register/',sign_in,name='sign_in'),
+    path('sign_up/',sign_up,name='sign_up'),
+    
+    path('logout/',logout,name='logout'),
+    path('order/',order,name='order'),
+    
+    
 
 ]
 
