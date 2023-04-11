@@ -17,7 +17,7 @@ header{
 
 
 .header__inner{
-    display: flex;
+    display: inline;
     justify-content: space-between;
 }
 

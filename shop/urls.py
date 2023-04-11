@@ -29,16 +29,12 @@ urlpatterns = [
     path('detail/<int:id>',detail,name = 'detail'),
     path('favorites/<int:id>',favorites,name = 'favorites'),
     path('favorite/',favorites_page,name = 'favorite'),
-    
     path('remove_from_cartpage/', remove_from_cartpage,name='remove_from_cartpage'),
-    
     path('cards/',cards,name = 'cards'),
     path('addcart/<int:id>',cart,name = 'addcart'),
     path('delete/<int:id>', delete, name='delete'),
-    
     path('register/',sign_in,name='sign_in'),
     path('sign_up/',sign_up,name='sign_up'),
-    
     path('logout/',logout,name='logout'),
     path('order/',order,name='order'),
     
